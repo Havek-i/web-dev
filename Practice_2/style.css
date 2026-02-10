@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: rgb(148, 176, 255);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: cent;
+}
+
+header > nav {
+    margin: auto;
+    max-width: 280px;
+}
+
+header > nav > ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(73, 85, 70);
+    padding: 8px 10px;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 20px;
+    transition: all .3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+header > nav > ul > li > a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+}
+
+.container {
+    flex-grow: 1;
+}
+
+.container > h1 {
+    text-align: center;
+}
+
+.demo {
+    width: 100vw;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo button {
+    padding: 8px 10px;
+    background-color: blueviolet;
+    border: 1px dotted gray;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.demo button:active {
+    transform: scale(120%);
+    color: beige;
+    background-color: brown;
+}
+
+.demo .block {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s;
+}
+
+.demo .block:hover {
+    transform: rotate(180deg);
+}
+
+.demo input {
+    font-size: 0.8 rem;
+    text-align: center;
+    transition: all .9s;
+}
+
+.demo input:focus {
+    color: rgb(248, 28, 28);
+    transform: scaleX(200%);
+}
+
+
+footer {
+    flex-shrink: 0;
+    background-color: rgb(94, 75, 75);
+}
+
+footer > p {
+    color: antiquewhite;
+    text-align: center;
+}
+
+
